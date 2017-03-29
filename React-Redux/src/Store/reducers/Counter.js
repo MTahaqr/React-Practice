@@ -9,6 +9,8 @@ function Counter(state = 0, action){
         return state + 1
         case "Decrement":
         return state - 1
+        case "incrementUserInput":
+        return state + action.val
         default:
         return state;
     }
